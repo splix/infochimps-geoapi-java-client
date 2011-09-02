@@ -12,6 +12,7 @@
         <gmaven.version>1.3</gmaven.version>
         <gmaven.runtime>1.7</gmaven.runtime>
         <groovy.version>1.8.1</groovy.version>
+        <spring.version>3.1.0.M2</spring.version>
     </properties>
 
     <dependencies>
@@ -28,6 +29,24 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.5.8</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.1.2</version>
         </dependency>
 
     </dependencies>
@@ -75,6 +94,10 @@
     </build>
 
     <repositories>
+        <repository>
+            <id>SpringFramework</id>
+            <url>http://s3.amazonaws.com/maven.springframework.org/milestone</url>
+        </repository>
     </repositories>
 
 </project>
