@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.aquarius</groupId>
+    <artifactId>infochimps-geoapi-client</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Infochimps GEO API Client</name>
+
+    <properties>
+        <slf4j>1.5.8</slf4j>
+        <gmaven.version>1.3</gmaven.version>
+        <gmaven.runtime>1.7</gmaven.runtime>
+        <groovy.version>1.8.1</groovy.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.5.8</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+           <plugin>
+                <groupId>org.codehaus.gmaven</groupId>
+                <artifactId>gmaven-plugin</artifactId>
+                <version>${gmaven.version}</version>
+                <configuration>
+                  <!-- 1.8 not yet supported by plugin but 1.7 works
+                      here so long as we provide explicit version -->
+                  <providerSelection>${gmaven.runtime}</providerSelection>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.gmaven.runtime</groupId>
+                        <artifactId>gmaven-runtime-${gmaven.runtime}</artifactId>
+                        <version>${gmaven.version}</version>
+                        <exclusions>
+                             <exclusion>
+                                 <groupId>org.codehaus.groovy</groupId>
+                                 <artifactId>groovy-all</artifactId>
+                             </exclusion>
+                        </exclusions>
+                    </dependency>
+                    <dependency>
+                         <groupId>org.codehaus.groovy</groupId>
+                         <artifactId>groovy-all</artifactId>
+                         <version>${groovy.version}</version>
+                         <scope>compile</scope>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+	 </plugins>
+    </build>
+
+    <repositories>
+    </repositories>
+
+</project>
