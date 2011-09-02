@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aquarius</groupId>
     <artifactId>infochimps-geoapi-client</artifactId>
@@ -53,14 +54,14 @@
 
     <build>
         <plugins>
-           <plugin>
+            <plugin>
                 <groupId>org.codehaus.gmaven</groupId>
                 <artifactId>gmaven-plugin</artifactId>
                 <version>${gmaven.version}</version>
                 <configuration>
-                  <!-- 1.8 not yet supported by plugin but 1.7 works
-                      here so long as we provide explicit version -->
-                  <providerSelection>${gmaven.runtime}</providerSelection>
+                    <!-- 1.8 not yet supported by plugin but 1.7 works
+                    here so long as we provide explicit version -->
+                    <providerSelection>${gmaven.runtime}</providerSelection>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -68,17 +69,17 @@
                         <artifactId>gmaven-runtime-${gmaven.runtime}</artifactId>
                         <version>${gmaven.version}</version>
                         <exclusions>
-                             <exclusion>
-                                 <groupId>org.codehaus.groovy</groupId>
-                                 <artifactId>groovy-all</artifactId>
-                             </exclusion>
+                            <exclusion>
+                                <groupId>org.codehaus.groovy</groupId>
+                                <artifactId>groovy-all</artifactId>
+                            </exclusion>
                         </exclusions>
                     </dependency>
                     <dependency>
-                         <groupId>org.codehaus.groovy</groupId>
-                         <artifactId>groovy-all</artifactId>
-                         <version>${groovy.version}</version>
-                         <scope>compile</scope>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-all</artifactId>
+                        <version>${groovy.version}</version>
+                        <scope>compile</scope>
                     </dependency>
                 </dependencies>
                 <executions>
@@ -90,7 +91,7 @@
                     </execution>
                 </executions>
             </plugin>
-	 </plugins>
+        </plugins>
     </build>
 
     <repositories>
