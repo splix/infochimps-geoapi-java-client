@@ -1,10 +1,14 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * Query result
+ * TODO
  *
- * @since 02.09.11
+ * @since 03.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class Result {
+abstract class Result<T> {
+
+    int total
+    List<T> results
+
 }

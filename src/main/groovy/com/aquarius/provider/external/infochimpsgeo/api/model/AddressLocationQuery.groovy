@@ -1,13 +1,17 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * Query filter
+ * TODO
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class QueryFilter {
+class AddressLocationQuery extends LocationQuery {
 
-    String fieldName
-    String filter
+    String address
+
+    /**
+     * in meters
+     */
+    int radius
 }

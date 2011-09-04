@@ -1,13 +1,15 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * Query filter
+ * TODO
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class QueryFilter {
+class Coordinates {
 
-    String fieldName
-    String filter
+    double longitude
+
+    double latitude
+
 }

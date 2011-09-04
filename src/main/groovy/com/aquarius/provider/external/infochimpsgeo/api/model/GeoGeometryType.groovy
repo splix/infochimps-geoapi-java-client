@@ -1,13 +1,13 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * Query filter
+ * TODO
  *
- * @since 02.09.11
+ * @since 03.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class QueryFilter {
+public enum GeoGeometryType {
 
-    String fieldName
-    String filter
+    Point,
+
 }

@@ -1,13 +1,11 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * Query filter
+ * Query result
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class QueryFilter {
+class ResultItem {
 
-    String fieldName
-    String filter
 }
