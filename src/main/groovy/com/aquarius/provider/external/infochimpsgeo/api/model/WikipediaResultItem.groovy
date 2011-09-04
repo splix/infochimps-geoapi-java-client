@@ -1,11 +1,18 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
+import org.codehaus.jackson.annotate.JsonProperty
+import org.codehaus.jackson.annotate.JsonIgnoreProperties
+import org.codehaus.jackson.map.annotate.JsonSerialize
+import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
+import org.codehaus.jackson.map.annotate.JsonDeserialize
+
 /**
  * TODO
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 class WikipediaResultItem extends ResultItem {
 
     /**
@@ -13,12 +20,8 @@ class WikipediaResultItem extends ResultItem {
      */
     String title
 
-    /**
-     * 	This is the URL-encoded title. For most folks it is the best
-     * 	practical ID of a topic, but for the true identifier of a page
-     * 	please use the `wikipedia_numeric_id`.
-     */
-    String wikipediaId
+    @JsonProperty('wikipedia_id')
+    int wikipediaId
 
     /**
      * URL of the wikipedia article.
@@ -43,6 +46,7 @@ class WikipediaResultItem extends ResultItem {
     /**
      * 	The location of the content. Uses geographic coordinates extracted from Wikipedia.
      */
+    @JsonDeserialize(using = CoordinatesDeserializer)
     Coordinates coordinates
 
     /**
@@ -58,6 +62,7 @@ class WikipediaResultItem extends ResultItem {
     List<String> inside
     List<String> intersects
 
+    @JsonProperty('geo_geometry_type')
     GeoGeometryType geoGeometryType
 
     List<String> yagoClasses

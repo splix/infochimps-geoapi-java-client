@@ -1,0 +1,45 @@
+{
+  "total": 1,
+  "results": [
+    {
+      "url": "http://en.wikipedia.org/wiki/Flamingo_Hotel,_Miami_Beach",
+      "md5id": "31ee610b67fb212f682990400d6ec304",
+      "wikipedia_id": 5436443,
+      "inside": [
+        "94c7e109ae73dc38007ded11da941dd6",
+        "943d29be33341a9e4671f09f7a72bb20",
+        "a6b3367173e388da4a278bfec9276e22",
+        "7532aa2d50eb2f2de1966ef022190250",
+        "668787581ed6fb5e51832b807d88cc2e",
+        "dce4ac6f6314deedb0278a12b37dc20f",
+        "9f4c5f5e633d886847f7fb35f8f6a704",
+        "c55a18620647d72c584a758d502b4316",
+        "651bea529f93e6c5c02d03badb3d6d21"
+      ],
+      "geo_geometry_type": "Point",
+      "_type": "wikipedia_article",
+      "abstract": "The Flamingo Hotel overlooked Biscayne Bay on the west side of the newly-formed city of Miami Beach, Florida until the 1950s, when it was torn down to make room for the new Morton Towers development, which is now known as the Flamingo South Beach. The hotel was built by pioneering Miami Beach developer Carl G. Fisher in 1920, designed by Price and McLanahan, and opened in 1921. Fisher was determined to avoid the ocean-side beaches where his development partner John S. Collins had established a casino. He saw the smooth waters of Biscayne Bay as the perfect place for a boat racing spectacle, as an attraction for wealthy and refined tourists. The pioneer automobile racing promoter established the famous Biscayne Bay Speed Boat Regattas near Belle Isle as a publicity draw for his giant new hotel. He would continue to stoke the exotic vacation destination image that drove the land boom in the area with stunts like his publicity photos with his elephant Rosie. The Flamingo site overlooks Flagler Monument Island in Biscayne Bay.",
+      "intersects": [
+        "94c7e109ae73dc38007ded11da941dd6",
+        "943d29be33341a9e4671f09f7a72bb20",
+        "a6b3367173e388da4a278bfec9276e22",
+        "7532aa2d50eb2f2de1966ef022190250",
+        "668787581ed6fb5e51832b807d88cc2e",
+        "dce4ac6f6314deedb0278a12b37dc20f",
+        "9f4c5f5e633d886847f7fb35f8f6a704",
+        "c55a18620647d72c584a758d502b4316",
+        "651bea529f93e6c5c02d03badb3d6d21"
+      ],
+      "yago_classes": [
+        "HotelsInMiamiBeach",
+        "Florida"
+      ],
+      "coordinates": [
+        -80.14461,
+        25.78687
+      ],
+      "freebase_link": "http://rdf.freebase.com/ns/m/0dltd5",
+      "title": "Flamingo Hotel, Miami Beach"
+    }
+  ]
+}

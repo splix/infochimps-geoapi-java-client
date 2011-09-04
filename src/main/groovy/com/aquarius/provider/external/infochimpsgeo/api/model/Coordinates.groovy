@@ -8,8 +8,8 @@ package com.aquarius.provider.external.infochimpsgeo.api.model
  */
 class Coordinates {
 
-    double longitude
+    Double longitude
 
-    double latitude
+    Double latitude
 
 }
