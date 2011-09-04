@@ -1,9 +1,10 @@
 package com.aquarius.provider.external.infochimpsgeo.api
 
-import com.aquarius.provider.external.infochimpsgeo.api.model.Result
 import com.aquarius.provider.external.infochimpsgeo.api.model.LocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.QueryFilter
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeoSource
+import com.aquarius.provider.external.infochimpsgeo.api.model.ResultItem
+import com.aquarius.provider.external.infochimpsgeo.api.model.Result
 
 /**
  *  Infochimps Geo Client
@@ -13,6 +14,6 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.GeoSource
  */
 interface InfochimpsGeo {
 
-   Result executeQueryWikipedia(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException
+   Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException
 
 }
