@@ -3,6 +3,7 @@ package com.aquarius.provider.external.infochimpsgeo.api.impl
 import spock.lang.Specification
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeoSource
+import com.aquarius.provider.external.infochimpsgeo.api.model.AddressLocationQuery
 
 /**
  * TODO
@@ -28,4 +29,24 @@ class InfochimpsGeoTemplateTest extends Specification {
             result.results.size() == 1
             result.results[0].wikipediaId == 5436443
     }
+
+    def "Use location params"() {
+        setup:
+            HttpLoader httpLoader = Mock()
+            geoTemplate.httpLoader = httpLoader
+            AddressLocationQuery query = new AddressLocationQuery(
+                    address: '10 Hannover Sq., NY, NY',
+                    radius: 500
+            )
+        when:
+            geoTemplate.executeQuery(GeoSource.Wikipedia, query, null)
+        then:
+            1 * httpLoader.getJson(_, _) >> { x, y ->
+                assert y.size() == 2
+                assert y['g.address_text'] == query.address
+                assert y['g.radius'] == query.radius
+                return null
+            }
+    }
+
 }

@@ -31,4 +31,13 @@ class PointLocationQuery extends LocationQuery {
         )
         this.radius = radius
     }
+
+    @Override
+    Map<String, Object> asParams() {
+        return [
+                'g.longitude': coordinates.longitude,
+                'g.latitude': coordinates.latitude,
+                'g.radius': radius
+        ] as Map
+    }
 }

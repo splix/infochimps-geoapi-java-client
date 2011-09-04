@@ -14,4 +14,12 @@ class AddressLocationQuery extends LocationQuery {
      * in meters
      */
     int radius
+
+    @Override
+    Map<String, Object> asParams() {
+        return [
+                'g.address_text': address,
+                'g.radius': radius
+        ] as Map
+    }
 }

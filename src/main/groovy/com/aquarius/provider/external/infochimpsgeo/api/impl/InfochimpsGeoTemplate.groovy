@@ -30,7 +30,12 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
     JsonParser jsonParser = new JsonParser()
 
     Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException {
-        String json = httpLoader.getJson(urls.get(source), [:])
+        Map params = [:]
+        if (query) { //TODO can it be empty?
+            params.putAll(query.asParams())
+        }
+
+        String json = httpLoader.getJson(urls.get(source), params)
         if (!json || json.length() == 0) {
             //TODO throw an error?
             return null

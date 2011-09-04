@@ -6,5 +6,7 @@ package com.aquarius.provider.external.infochimpsgeo.api.model
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-class LocationQuery {
+abstract class LocationQuery {
+
+    abstract Map<String, Object> asParams()
 }

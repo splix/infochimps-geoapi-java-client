@@ -12,4 +12,12 @@ class TileLocationQuery extends LocationQuery {
     int y
     int zoomLevel
 
+    @Override
+    Map<String, Object> asParams() {
+        return [
+                'g.tile_x': x,
+                'g.tile_y': y,
+                'g.zoom_level': zoomLevel
+        ] as Map
+    }
 }
