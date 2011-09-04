@@ -30,5 +30,10 @@ class WikipediaResultTest extends Specification {
             result.results.size() == 1
             result.results[0].md5id == '31ee610b67fb212f682990400d6ec304'
             result.results[0].url == new URL("http://en.wikipedia.org/wiki/Flamingo_Hotel,_Miami_Beach")
+            result.results[0].coordinates == new Coordinates(
+                    longitude: -80.14461,
+                    latitude: 25.78687
+
+            )
     }
 }
