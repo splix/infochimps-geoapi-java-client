@@ -29,13 +29,11 @@ class WikipediaResultItem extends ResultItem {
     URL url
 
     /**
-     * The Wikipedia Article brief abstract.
+     * The Wikipedia Article abstract.
+     *
+     * NOTE: `abstract` is reserved keyword for Java, therefor 'summary' is used here
      */
-    String description
-
-    /**
-     * The Wikipedia Article extended abstract.
-     */
+    @JsonProperty('abstract')
     String summary
 
     /**
@@ -65,7 +63,12 @@ class WikipediaResultItem extends ResultItem {
     @JsonProperty('geo_geometry_type')
     GeoGeometryType geoGeometryType
 
+    @JsonProperty('yago_classes')
     List<String> yagoClasses
 
+    @JsonProperty('freebase_link')
     URL freebaseLink
+
+    @JsonProperty('related_pages')
+    List<String> relatedPages
 }

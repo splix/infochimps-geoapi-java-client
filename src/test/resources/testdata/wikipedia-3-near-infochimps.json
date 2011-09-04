@@ -1,0 +1,130 @@
+{
+  "total": 3,
+  "results": [
+    {
+      "url": "http://en.wikipedia.org/wiki/Austin_Public_Library",
+      "md5id": "42bd9d853b8bd4f9c2052cbd1d580447",
+      "wikipedia_id": 20996283,
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "2229892a9acc7e651594a1d78ebcae09",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "04f0bed6caeafd7c0bcd30db1a941374",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "a0ab27642f802800762012db448e45f3",
+        "866325d8ab3cf84371dcae16cf49d83a"
+      ],
+      "geo_geometry_type": "Point",
+      "_type": "wikipedia_article",
+      "abstract": "Austin Public Library is a library service in Austin, Texas, United States. It is operated by the City of Austin. The John Henry Faulk Central Library at 800 Guadalupe Street is the main branch; opening in 1979. It is 110,000 square feet (10,000 m) on five stories (the first three open to the public, with the fourth floor reserved for the administrative offices, and the basement reserved for storage/utilities). The Austin History Center at 810 Guadalupe Street (immediately adjacent to the 1979 building), which dates from the 1930's, was formerly the main library of Austin. As of 2010 the city plans to open a new central library building to be in operation by 2014; the current plans are for a building of 170,000 sq. ft. , expandable to about 250,000 sq. ft. , as part of the city's extensive redevelopment of the former Seaholm power plant site, west of the intersection of Lamar Boulevard and Cesar Chavez Street. The building will be funded in large part by a 2006 bond issue, and private donations.",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "2229892a9acc7e651594a1d78ebcae09",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "04f0bed6caeafd7c0bcd30db1a941374",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "a0ab27642f802800762012db448e45f3",
+        "866325d8ab3cf84371dcae16cf49d83a"
+      ],
+      "yago_classes": [
+        "PublicLibrariesInTexas"
+      ],
+      "coordinates": [
+        -97.745834,
+        30.271389
+      ],
+      "freebase_link": "http://rdf.freebase.com/ns/m/05b1lm3",
+      "title": "Austin Public Library"
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/House_Park",
+      "md5id": "eaba0f153d854412296b8ce407e10ddf",
+      "wikipedia_id": 12169572,
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "2229892a9acc7e651594a1d78ebcae09",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "a4397135c1edec6b2a605313965cc3c8",
+        "e06b13587157da343e8878fee4d40cd1",
+        "a0ab27642f802800762012db448e45f3",
+        "075c4a912f772665c12e3c083716dd20"
+      ],
+      "geo_geometry_type": "Point",
+      "_type": "wikipedia_article",
+      "abstract": "House Park is a 6,000-6,500 seat American football stadium in Austin, Texas that is owned and operated by the Austin Independent School District. House Park opened in 1939 along Shoal Creek, just down the hill from the old campus of Austin High School near downtown. The stadium was built on land donated by Edward M. House, a former diplomat and advisor to Woodrow Wilson. House Park was later dedicated to the memory of the Austin High students that lost their lives serving in World War I and World War II. Today, the stadium still serves as the home stadium for Austin High, as well as Anderson, McCallum and Lanier High Schools. The absence of a track sets it apart from most other high school stadiums in large cities, but it does also host soccer games and has in the past been the site of the Texas High School Lacrosse Championships. It is also home of the Austin Outlaws of the Women's Football Alliance. In 2008 the natural grass playing surface was replaced with artificial turf. Fans were able to take patches of the grass turf as souvenirs. In February 2010, House Park began construction of brand new locker rooms on the North end of the stadium. The renovation will allow House Park to secure a contract as home field of the Austin Aztex professional soccer team who have had their eye on the prime downtown field location since 2009 but were hindered by several factors including the outdated locker rooms. \\u201CThis will be a great venue for us in 2010,\\\" says Head Coach Adrian Heath \\\"You\\u2019ve got a great view of the beautiful skyline from the stands and it\\u2019s very close quarters. The fans are right on top of the players. I expect our fans to be loud at House Park and really give our players a boost. \\u201D",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "2229892a9acc7e651594a1d78ebcae09",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "a4397135c1edec6b2a605313965cc3c8",
+        "e06b13587157da343e8878fee4d40cd1",
+        "a0ab27642f802800762012db448e45f3",
+        "075c4a912f772665c12e3c083716dd20"
+      ],
+      "yago_classes": [
+        "SportsVenuesInAustin",
+        "Texas",
+        "HighSchoolFootballVenuesInTexas"
+      ],
+      "coordinates": [
+        -97.74958,
+        30.27798
+      ],
+      "freebase_link": "http://rdf.freebase.com/ns/m/02vs6gq",
+      "title": "House Park"
+    },
+    {
+      "url": "http://en.wikipedia.org/wiki/Austin_City_Limits_Music_Festival",
+      "inside": [
+        "dfb4272eb17eddbda9bcd1870e5063a2",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "9c605221c4f2d8c50d318ae74143ffda",
+        "3326e1008a50b6abd68169bd7cbcb1c0",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "e06b13587157da343e8878fee4d40cd1"
+      ],
+      "_type": "wikipedia_article",
+      "abstract": "The Austin City Limits Music Festival (ACL Festival) is an annual three-day music festival in Austin, Texas' Zilker Park. The Festival brings together more than 130 bands on eight stages playing rock, country, folk, indie, Americana, hip-hop, reggae, electronic, and bluegrass. Over 65,000 visitors are attracted to the event each day. Named after the legendary PBS concert series, the festival is produced by C3 Presents, who also co-produce the Lollapalooza festival. In a very short time the Austin City Limits Music Festival has joined Bonnaroo, Lollapalooza, and Coachella as the United States\\u2019 premier rock festivals.",
+      "freebase_link": "http://rdf.freebase.com/ns/m/0520tz",
+      "title": "Austin City Limits Music Festival",
+      "md5id": "584182d02fc61216af49d3d53c7c8d1a",
+      "wikipedia_id": 1443527,
+      "geo_geometry_type": "Point",
+      "related_pages": [
+        "United_States"
+      ],
+      "yago_classes": [
+        "MusicFestivalsInTheUnitedStates",
+        "FestivalsInAustin",
+        "Texas",
+        "RockFestivalsInTheUnitedStates"
+      ],
+      "intersects": [
+        "dfb4272eb17eddbda9bcd1870e5063a2",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "9c605221c4f2d8c50d318ae74143ffda",
+        "3326e1008a50b6abd68169bd7cbcb1c0",
+        "b9d905209f3f9000d8b42d63d7ef427d",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "e06b13587157da343e8878fee4d40cd1"
+      ],
+      "coordinates": [
+        -97.76716,
+        30.26756
+      ]
+    }
+  ]
+}
