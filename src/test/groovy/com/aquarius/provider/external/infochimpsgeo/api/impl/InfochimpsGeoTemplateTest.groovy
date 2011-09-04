@@ -4,6 +4,7 @@ import spock.lang.Specification
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeoSource
 import com.aquarius.provider.external.infochimpsgeo.api.model.AddressLocationQuery
+import com.aquarius.provider.external.infochimpsgeo.api.model.QueryFilter
 
 /**
  * TODO
@@ -45,6 +46,31 @@ class InfochimpsGeoTemplateTest extends Specification {
                 assert y.size() == 2
                 assert y['g.address_text'] == query.address
                 assert y['g.radius'] == query.radius
+                return null
+            }
+    }
+
+    def "Use filter params"() {
+        setup:
+            HttpLoader httpLoader = Mock()
+            geoTemplate.httpLoader = httpLoader
+            Set filters = [
+                    new QueryFilter(
+                            fieldName: 'x',
+                            filter: '1'
+                    ),
+                    new QueryFilter(
+                            fieldName: 'y',
+                            filter: '5'
+                    ),
+            ]
+        when:
+            geoTemplate.executeQuery(GeoSource.Wikipedia, null, filters)
+        then:
+            1 * httpLoader.getJson(_, _) >> { x, y ->
+                assert y.size() == 2
+                assert y['f.x'] == '1'
+                assert y['f.y'] == '5'
                 return null
             }
     }

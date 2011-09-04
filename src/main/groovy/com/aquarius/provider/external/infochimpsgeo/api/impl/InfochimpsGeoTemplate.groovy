@@ -35,6 +35,12 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
             params.putAll(query.asParams())
         }
 
+        if (filters) {
+            filters.each {
+                params.put('f.'+it.fieldName, it.filter)
+            }
+        }
+
         String json = httpLoader.getJson(urls.get(source), params)
         if (!json || json.length() == 0) {
             //TODO throw an error?
