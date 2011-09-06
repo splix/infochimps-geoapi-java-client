@@ -6,6 +6,8 @@ import org.codehaus.jackson.map.module.SimpleModule
 import org.codehaus.jackson.Version
 import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
 import com.aquarius.provider.external.infochimpsgeo.api.impl.JsonParser
+import com.aquarius.provider.external.infochimpsgeo.api.impl.InfochimpsHttpMessageConverter
+import com.aquarius.provider.external.infochimpsgeo.api.HttpInputMessageMock
 
 /**
  * TODO
@@ -15,13 +17,14 @@ import com.aquarius.provider.external.infochimpsgeo.api.impl.JsonParser
  */
 class WikipediaResultTest extends Specification {
 
-    JsonParser jsonParser = new JsonParser()
+    InfochimpsHttpMessageConverter converter = new InfochimpsHttpMessageConverter()
 
     def "Can parse input"() {
         setup:
             String json = this.class.classLoader.getResourceAsStream('testdata/wikipedia-one-item.json').text
+            HttpInputMessageMock inputMessage = new HttpInputMessageMock(content: json)
         when:
-            WikipediaResult result = jsonParser.parse(json, WikipediaResult)
+            WikipediaResult result = converter.read(WikipediaResult, inputMessage)
         then:
             result != null
             result.total == 1
@@ -47,8 +50,9 @@ class WikipediaResultTest extends Specification {
     def "Parse result with 3 items"() {
         setup:
             String json = this.class.classLoader.getResourceAsStream('testdata/wikipedia-3-near-infochimps.json').text
+            HttpInputMessageMock inputMessage = new HttpInputMessageMock(content: json)
         when:
-            WikipediaResult result = jsonParser.parse(json, WikipediaResult)
+            WikipediaResult result = converter.read(WikipediaResult, inputMessage)
         then:
             result != null
             result.total == 3

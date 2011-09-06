@@ -10,6 +10,13 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.ResultItem
 import com.aquarius.provider.external.infochimpsgeo.api.model.Result
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResultItem
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
+import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter
+import org.codehaus.jackson.map.ObjectMapper
+import org.codehaus.jackson.map.module.SimpleModule
+import org.codehaus.jackson.Version
+import com.aquarius.provider.external.infochimpsgeo.api.model.Coordinates
+import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
+import org.springframework.web.util.UriUtils
 
 /**
  * Infochimps Geo Client default implementation
@@ -26,8 +33,20 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
         classes.put(GeoSource.Wikipedia, WikipediaResult)
     }
 
-    HttpLoader httpLoader = new HttpLoader()
-    JsonParser jsonParser = new JsonParser()
+    static String server = 'http://api.infochimps.com'
+
+//    HttpLoader httpLoader = new HttpLoader()
+//    JsonParser jsonParser = new JsonParser()
+    RestTemplate restTemplate
+
+
+
+    InfochimpsGeoTemplate() {
+        restTemplate = new RestTemplate()
+        restTemplate.setMessageConverters([
+                new InfochimpsHttpMessageConverter()
+        ])
+    }
 
     Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException {
         Map params = [:]
@@ -41,13 +60,22 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
             }
         }
 
-        String json = httpLoader.getJson(urls.get(source), params)
-        if (!json || json.length() == 0) {
-            //TODO throw an error?
-            return null
-        }
-        Class clazz = classes.get(source)
-        return jsonParser.parse(json, clazz)
+        String urlParams = params.entrySet().sort { x, y ->
+            return x.key.compareToIgnoreCase(y.key)
+        }.collect {
+            String value = UriUtils.encodeQueryParam(it.value.toString(), 'UTF-8')
+            return "$it.key=$value"
+        }.join('&')
+
+        String url = [
+                server,
+                urls.get(source),
+                '?',
+                urlParams
+        ].join('')
+        Class<Result> clazz = classes.get(source)
+
+        return restTemplate.getForObject(new URI(url), clazz)
     }
 
 }
