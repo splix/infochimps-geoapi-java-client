@@ -14,12 +14,6 @@ import org.springframework.http.client.ClientHttpResponse
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 
-/**
- * TODO
- *
- * @since 04.09.11
- * @author Igor Artamonov (http://igorartamonov.com)
- */
 class InfochimpsGeoTemplateTest extends Specification {
 
     InfochimpsGeoTemplate geoTemplate = new InfochimpsGeoTemplate()

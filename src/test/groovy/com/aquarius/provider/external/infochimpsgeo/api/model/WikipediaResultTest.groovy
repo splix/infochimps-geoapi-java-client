@@ -4,12 +4,6 @@ import spock.lang.Specification
 import com.aquarius.provider.external.infochimpsgeo.api.impl.InfochimpsHttpMessageConverter
 import com.aquarius.provider.external.infochimpsgeo.api.HttpInputMessageMock
 
-/**
- * TODO
- *
- * @since 03.09.11
- * @author Igor Artamonov (http://igorartamonov.com)
- */
 class WikipediaResultTest extends Specification {
 
     InfochimpsHttpMessageConverter converter = new InfochimpsHttpMessageConverter()

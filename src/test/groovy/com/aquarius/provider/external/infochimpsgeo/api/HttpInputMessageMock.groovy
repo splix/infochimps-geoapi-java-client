@@ -5,7 +5,7 @@ import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
 
 /**
- * TODO
+ * HttpInputMessage mock, for testing JSON loaded from testdata
  *
  * @since 05.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
