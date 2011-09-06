@@ -10,7 +10,8 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.Coordinates
 import org.codehaus.jackson.JsonToken
 
 /**
- * TODO
+ * Infochimps serializes coordinates as 2-element array, but we need
+ * to convert it to longitude/latitude structure
  *
  * @since 03.09.11
  * @author Igor Artamonov (http://igorartamonov.com)

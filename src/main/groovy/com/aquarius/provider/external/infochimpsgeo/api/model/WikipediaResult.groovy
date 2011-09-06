@@ -1,7 +1,7 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * TODO
+ * Results list for wikipedia query
  *
  * @since 03.09.11
  * @author Igor Artamonov (http://igorartamonov.com)

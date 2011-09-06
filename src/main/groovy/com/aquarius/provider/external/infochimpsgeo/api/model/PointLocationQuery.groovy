@@ -1,7 +1,7 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * TODO
+ * Query by coordinates + radius
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)

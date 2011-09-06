@@ -8,7 +8,7 @@ import org.codehaus.jackson.map.module.SimpleModule
 import org.codehaus.jackson.map.ObjectMapper
 
 /**
- * TODO
+ * Converts Infochimps API JSONs to Java models
  *
  * @since 05.09.11
  * @author Igor Artamonov (http://igorartamonov.com)

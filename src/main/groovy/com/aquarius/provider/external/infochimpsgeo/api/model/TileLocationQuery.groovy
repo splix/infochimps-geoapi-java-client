@@ -1,7 +1,7 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 /**
- * TODO
+ * Query for data in specified Google Map's tile (by x, y and zoom level)
  *
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
