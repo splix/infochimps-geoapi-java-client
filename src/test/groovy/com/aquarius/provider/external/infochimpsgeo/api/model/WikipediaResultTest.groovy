@@ -1,11 +1,6 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 import spock.lang.Specification
-import org.codehaus.jackson.map.ObjectMapper
-import org.codehaus.jackson.map.module.SimpleModule
-import org.codehaus.jackson.Version
-import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
-import com.aquarius.provider.external.infochimpsgeo.api.impl.JsonParser
 import com.aquarius.provider.external.infochimpsgeo.api.impl.InfochimpsHttpMessageConverter
 import com.aquarius.provider.external.infochimpsgeo.api.HttpInputMessageMock
 

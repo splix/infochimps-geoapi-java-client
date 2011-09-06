@@ -32,14 +32,9 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
         urls.put(GeoSource.Wikipedia, '/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search')
         classes.put(GeoSource.Wikipedia, WikipediaResult)
     }
-
     static String server = 'http://api.infochimps.com'
 
-//    HttpLoader httpLoader = new HttpLoader()
-//    JsonParser jsonParser = new JsonParser()
     RestTemplate restTemplate
-
-
 
     InfochimpsGeoTemplate() {
         restTemplate = new RestTemplate()
