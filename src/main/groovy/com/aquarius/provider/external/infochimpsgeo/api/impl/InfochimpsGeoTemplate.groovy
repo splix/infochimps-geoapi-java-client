@@ -33,7 +33,7 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
         urls.put(GeoSource.Wikipedia, '/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search')
         classes.put(GeoSource.Wikipedia, WikipediaResult)
 
-        urls.put(GeoSource.Foursquare, 'geo/location/foursquare/places/search')
+        urls.put(GeoSource.Foursquare, '/geo/location/foursquare/places/search')
         classes.put(GeoSource.Foursquare, FoursqResult)
     }
     static String server = 'http://api.infochimps.com'

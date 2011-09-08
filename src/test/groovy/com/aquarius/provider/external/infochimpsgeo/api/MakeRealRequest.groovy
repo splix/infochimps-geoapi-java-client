@@ -7,6 +7,7 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.LocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.PointLocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.BoxLocationQuery
+import com.aquarius.provider.external.infochimpsgeo.api.model.Result
 
 /**
  * TODO
@@ -21,16 +22,17 @@ class MakeRealRequest extends Specification {
             apiKey: apiKey
     )
 
-    def "Wikipedia"() {
+    def "Few requests, check results count"() {
         when:
-            WikipediaResult result = infochimpsGeoTemplate.executeQuery(GeoSource.Wikipedia, query, filters)
+            Result result = infochimpsGeoTemplate.executeQuery(geo, query, null)
         then:
             result != null
             result.total == count
             result.results.size() == count
         where:
-            count | query                               | filters
-            2  | new PointLocationQuery(30.273054, -104.02, 5000) | null
-            11 | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682) | null
+            geo | count | query
+            GeoSource.Wikipedia  | 2  | new PointLocationQuery(30.273054, -104.02, 5000)
+            GeoSource.Wikipedia  | 11 | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
+            GeoSource.Foursquare | 5  | new PointLocationQuery(30.273054, -104.02, 5000)
     }
 }
