@@ -17,7 +17,7 @@ import org.springframework.http.MediaType
 class InfochimpsGeoTemplateTest extends Specification {
 
     InfochimpsGeoTemplate geoTemplate = new InfochimpsGeoTemplate()
-    String wikipediaApi = 'http://api.infochimps.com/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search?'
+    String wikipediaApi = 'http://api.infochimps.com/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search?apikey=NotConfigured'
 
     def "Load one result"() {
         setup:
@@ -32,7 +32,7 @@ class InfochimpsGeoTemplateTest extends Specification {
             WikipediaResult result = geoTemplate.executeQuery(GeoSource.Wikipedia, null, null)
         then:
             1 * requestFactory.createRequest(
-                    new URI('http://api.infochimps.com/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search?'),
+                    new URI(wikipediaApi),
                     HttpMethod.GET) >> request
             1 * request.headers >> new HttpHeaders()
             1 * request.execute() >> response
@@ -54,7 +54,7 @@ class InfochimpsGeoTemplateTest extends Specification {
             RestTemplate restTemplate = Mock()
             geoTemplate.restTemplate = restTemplate
             String reqUrl = [wikipediaApi,
-                         'g.address_text=10%20Hannover%20Sq.,%20NY',
+                         '&g.address_text=10%20Hannover%20Sq.,%20NY',
                          '&g.radius=500'].join('')
         when:
             geoTemplate.executeQuery(GeoSource.Wikipedia, query, null)
@@ -80,7 +80,7 @@ class InfochimpsGeoTemplateTest extends Specification {
             RestTemplate restTemplate = Mock()
             geoTemplate.restTemplate = restTemplate
             String reqUrl = [wikipediaApi,
-                         'f.x=1',
+                         '&f.x=1',
                          '&f.y=5'].join('')
         when:
             geoTemplate.executeQuery(GeoSource.Wikipedia, null, filters)

@@ -35,6 +35,7 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
     static String server = 'http://api.infochimps.com'
 
     RestTemplate restTemplate
+    String apiKey = 'NotConfigured'
 
     InfochimpsGeoTemplate() {
         restTemplate = new RestTemplate()
@@ -53,6 +54,10 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
             filters.each {
                 params.put('f.'+it.fieldName, it.filter)
             }
+        }
+
+        if (apiKey) {
+            params.put('apikey', apiKey)
         }
 
         String urlParams = params.entrySet().sort { x, y ->

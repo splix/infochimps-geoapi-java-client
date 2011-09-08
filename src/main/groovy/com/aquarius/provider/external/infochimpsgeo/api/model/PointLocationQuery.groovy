@@ -24,7 +24,7 @@ class PointLocationQuery extends LocationQuery {
         this.radius = radius
     }
 
-    PointLocationQuery(double longitude, double latitude, int radius) {
+    PointLocationQuery(double latitude, double longitude, int radius) {
         this.coordinates = new Coordinates(
                 longitude: longitude,
                 latitude: latitude
