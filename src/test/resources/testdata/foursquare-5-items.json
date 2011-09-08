@@ -1,0 +1,203 @@
+{
+  "total": 5,
+  "results": [
+    {
+      "md5id": "273496dacf1707d7c7812291f622f69c",
+      "feature_codes": {
+        "foursquare_feature_code": "Travel Spots:Hotels:Motels"
+      },
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "e761402fcc82a3359723e59f0a762a20",
+        "ad4be9622d1ed21cbabb27b95d0f875c"
+      ],
+      "timezone": "America/North_Dakota/New_Salem",
+      "geo_geometry_type": "Point",
+      "_type": "business.motel",
+      "extended_identifiers": {
+        "foursquare_venue_id": 1739515
+      },
+      "name": "El Cosmico",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "e761402fcc82a3359723e59f0a762a20",
+        "ad4be9622d1ed21cbabb27b95d0f875c"
+      ],
+      "coordinates": [
+        -104.021751880646,
+        30.3028259327755
+      ],
+      "_domain_id": 1739515
+    },
+    {
+      "md5id": "6376d295636401d1fbb103bd55070454",
+      "feature_codes": {
+        "foursquare_feature_code": "Arts & Entertainment:Art Galleries"
+      },
+      "inside": [
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "ad4be9622d1ed21cbabb27b95d0f875c"
+      ],
+      "timezone": "America/North_Dakota/New_Salem",
+      "geo_geometry_type": "Point",
+      "_type": "business.art_gallery",
+      "extended_identifiers": {
+        "foursquare_venue_id": 1716460
+      },
+      "name": "The Chinati Foundation",
+      "intersects": [
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "ad4be9622d1ed21cbabb27b95d0f875c"
+      ],
+      "coordinates": [
+        -104.026139974594,
+        30.2996764749994
+      ],
+      "_domain_id": 1716460
+    },
+    {
+      "md5id": "6b2c5536e8bebee71761fcd75d454f94",
+      "feature_codes": {
+        "foursquare_feature_code": "Nightlife Spots:Bars"
+      },
+      "inside": [
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "6b4b94c83402c782e6e50f1c77e4f54a",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "d4c7e49f41647b9badae09c8768759ba"
+      ],
+      "timezone": "America/North_Dakota/New_Salem",
+      "geo_geometry_type": "Point",
+      "_type": "business.bar_or_pub",
+      "extended_identifiers": {
+        "foursquare_venue_id": 2488256
+      },
+      "name": "Padre's Bar & Grill",
+      "intersects": [
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "6b4b94c83402c782e6e50f1c77e4f54a",
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "d4c7e49f41647b9badae09c8768759ba"
+      ],
+      "coordinates": [
+        -104.02321100235,
+        30.3094209401069
+      ],
+      "_domain_id": 2488256
+    },
+    {
+      "md5id": "67b706ff127517a82fcb2fcbc0dde54e",
+      "feature_codes": {
+        "foursquare_feature_code": ""
+      },
+      "inside": [
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "6b4b94c83402c782e6e50f1c77e4f54a",
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "d36c800afd42c2d393acd4088e5a90af"
+      ],
+      "timezone": "America/Chicago",
+      "geo_geometry_type": "Point",
+      "_type": "geo.place",
+      "extended_identifiers": {
+        "foursquare_venue_id": 21863400
+      },
+      "name": "Miniature Rooster",
+      "intersects": [
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "6b4b94c83402c782e6e50f1c77e4f54a",
+        "e761402fcc82a3359723e59f0a762a20",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "d36c800afd42c2d393acd4088e5a90af"
+      ],
+      "coordinates": [
+        -104.03419405,
+        30.30628015
+      ],
+      "_domain_id": 21863400
+    },
+    {
+      "md5id": "1a13147ef7cc3a924da631da872094e9",
+      "feature_codes": {
+        "foursquare_feature_code": "Great Outdoors:Other Great Outdoors"
+      },
+      "inside": [
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "e761402fcc82a3359723e59f0a762a20",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8"
+      ],
+      "timezone": "America/Chicago",
+      "geo_geometry_type": "Point",
+      "_type": "geo.landform",
+      "extended_identifiers": {
+        "foursquare_venue_id": 497618
+      },
+      "name": "Marfa, TX",
+      "intersects": [
+        "c13318fb98eb73eb297fdf1c3f3763ce",
+        "97b4d08da42bf29cc467323a58a663ed",
+        "d4c7e49f41647b9badae09c8768759ba",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "ad4be9622d1ed21cbabb27b95d0f875c",
+        "d36c800afd42c2d393acd4088e5a90af",
+        "e761402fcc82a3359723e59f0a762a20",
+        "7b5dc8e7d8c0060d2906318d5c64fa94",
+        "afdd0f0b66681f842d6e0cc9e4ce8fa8"
+      ],
+      "coordinates": [
+        -104.021301269531,
+        30.3076888673814
+      ],
+      "_domain_id": 497618
+    }
+  ]
+}

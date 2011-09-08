@@ -17,6 +17,7 @@ import org.codehaus.jackson.Version
 import com.aquarius.provider.external.infochimpsgeo.api.model.Coordinates
 import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
 import org.springframework.web.util.UriUtils
+import com.aquarius.provider.external.infochimpsgeo.api.model.FoursqResult
 
 /**
  * Infochimps Geo Client default implementation
@@ -31,6 +32,9 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
     static {
         urls.put(GeoSource.Wikipedia, '/encyclopedic/wikipedia/dbpedia/wikipedia_articles/search')
         classes.put(GeoSource.Wikipedia, WikipediaResult)
+
+        urls.put(GeoSource.Foursquare, 'geo/location/foursquare/places/search')
+        classes.put(GeoSource.Foursquare, FoursqResult)
     }
     static String server = 'http://api.infochimps.com'
 

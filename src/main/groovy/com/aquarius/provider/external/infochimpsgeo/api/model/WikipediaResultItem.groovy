@@ -42,26 +42,9 @@ class WikipediaResultItem extends ResultItem {
     List<String> images
 
     /**
-     * 	The location of the content. Uses geographic coordinates extracted from Wikipedia.
-     */
-    @JsonDeserialize(using = CoordinatesDeserializer)
-    Coordinates coordinates
-
-    /**
      * The keywords/tags used to describe this content. These are chosen from the ???
      */
     List<String> keywords
-
-    /**
-     * An md5 hex digest that, together with the domain, uniquely identifies this record.
-     */
-    String md5id
-
-    List<String> inside
-    List<String> intersects
-
-    @JsonProperty('geo_geometry_type')
-    GeoGeometryType geoGeometryType
 
     @JsonProperty('yago_classes')
     List<String> yagoClasses

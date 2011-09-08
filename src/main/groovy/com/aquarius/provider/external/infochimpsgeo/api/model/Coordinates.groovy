@@ -12,6 +12,14 @@ class Coordinates {
 
     Double latitude
 
+    Coordinates() {
+    }
+
+    Coordinates(Double longitude, Double latitude) {
+        this.latitude = latitude
+        this.longitude = longitude
+    }
+
     boolean equals(o) {
         if (this.is(o)) return true;
         if (!(o instanceof Coordinates)) return false;
