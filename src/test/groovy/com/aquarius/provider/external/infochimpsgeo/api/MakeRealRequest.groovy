@@ -31,8 +31,9 @@ class MakeRealRequest extends Specification {
             result.results.size() == count
         where:
             geo | count | query
-            GeoSource.Wikipedia  | 2  | new PointLocationQuery(30.273054, -104.02, 5000)
-            GeoSource.Wikipedia  | 11 | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
-            GeoSource.Foursquare | 5  | new PointLocationQuery(30.273054, -104.02, 5000)
+            GeoSource.Wikipedia   | 2  | new PointLocationQuery(30.273054, -104.02, 5000)
+            GeoSource.Wikipedia   | 11 | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
+            GeoSource.Foursquare  | 5  | new PointLocationQuery(30.273054, -104.02, 5000)
+            GeoSource.Locationary | 4  | new PointLocationQuery(30.3, -97.75, 150)
     }
 }
