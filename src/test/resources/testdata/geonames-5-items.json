@@ -1,0 +1,275 @@
+{
+  "total": 5,
+  "results": [
+    {
+      "time_zone_geo_id": "America/Chicago",
+      "county_id": "453",
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "e06b13587157da343e8878fee4d40cd1",
+        "114877530e42696489967f95f1d10b48",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd"
+      ],
+      "_type": "geo.commercial_site",
+      "extended_identifiers": {
+        "geonames_id": "4697215",
+        "ascii_name": "Herbert and Alice Bohn House"
+      },
+      "extended_properties": {
+        "state_fips_id": "TX"
+      },
+      "_meta": {
+        "updated_at": "2006-01-15"
+      },
+      "geo": {
+        "elevation": 182,
+        "average_elevation": 182
+      },
+      "_domain_id": "4697215",
+      "md5id": "a23d5aa097440cb2c9372cfb84391771",
+      "feature_codes": {
+        "geonames_feature_code": "S.BLDG"
+      },
+      "geo_geometry_type": "Point",
+      "state_id": "TX",
+      "country_id": "US",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "e06b13587157da343e8878fee4d40cd1",
+        "114877530e42696489967f95f1d10b48",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd"
+      ],
+      "name": "Herbert and Alice Bohn House",
+      "coordinates": [
+        -97.75112,
+        30.29993
+      ]
+    },
+    {
+      "time_zone_geo_id": "America/Chicago",
+      "county_id": "453",
+      "inside": [
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "e06b13587157da343e8878fee4d40cd1",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "114877530e42696489967f95f1d10b48"
+      ],
+      "_type": "geo.commercial_site",
+      "extended_identifiers": {
+        "geonames_id": "4697215",
+        "ascii_name": "Herbert and Alice Bohn House"
+      },
+      "extended_properties": {
+        "state_fips_id": "TX"
+      },
+      "_meta": {
+        "updated_at": "2006-01-15"
+      },
+      "geo": {
+        "elevation": 182,
+        "average_elevation": 182
+      },
+      "_domain_id": "4697215",
+      "md5id": "1d97b88daec6e9ad5fe0797b826500b3",
+      "feature_codes": {
+        "geonames_feature_code": "S.BLDG"
+      },
+      "geo_geometry_type": "Point",
+      "state_id": "TX",
+      "country_id": "US",
+      "intersects": [
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "e06b13587157da343e8878fee4d40cd1",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "114877530e42696489967f95f1d10b48"
+      ],
+      "name": "Herbert and Alice Bohn House",
+      "coordinates": [
+        -97.75112,
+        30.29993
+      ]
+    },
+    {
+      "time_zone_geo_id": "America/Chicago",
+      "county_id": "453",
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "114877530e42696489967f95f1d10b48",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070"
+      ],
+      "_type": "geo.commercial_site",
+      "extended_identifiers": {
+        "geonames_id": "4697215",
+        "ascii_name": "Herbert and Alice Bohn House"
+      },
+      "extended_properties": {
+        "state_fips_id": "TX"
+      },
+      "_meta": {
+        "updated_at": "2006-01-15"
+      },
+      "geo": {
+        "elevation": 182,
+        "average_elevation": 182
+      },
+      "_domain_id": "4697215",
+      "md5id": "8361ff471f66ccce59eef992f9ee9104",
+      "feature_codes": {
+        "geonames_feature_code": "S.BLDG"
+      },
+      "geo_geometry_type": "Point",
+      "state_id": "TX",
+      "country_id": "US",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "114877530e42696489967f95f1d10b48",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070"
+      ],
+      "name": "Herbert and Alice Bohn House",
+      "coordinates": [
+        -97.75112,
+        30.29993
+      ]
+    },
+    {
+      "time_zone_geo_id": "America/Chicago",
+      "county_id": "453",
+      "inside": [
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "114877530e42696489967f95f1d10b48",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "2e4b60fe09b7890c118d5401cb4acfe5"
+      ],
+      "_type": "geo.commercial_site",
+      "extended_identifiers": {
+        "geonames_id": "4697215",
+        "ascii_name": "Herbert and Alice Bohn House"
+      },
+      "extended_properties": {
+        "state_fips_id": "TX"
+      },
+      "_meta": {
+        "updated_at": "2006-01-15"
+      },
+      "geo": {
+        "elevation": 182,
+        "average_elevation": 182
+      },
+      "_domain_id": "4697215",
+      "md5id": "75aa7bac45fa8a2f2ee2663214c9ccc0",
+      "feature_codes": {
+        "geonames_feature_code": "S.BLDG"
+      },
+      "geo_geometry_type": "Point",
+      "state_id": "TX",
+      "country_id": "US",
+      "intersects": [
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "114877530e42696489967f95f1d10b48",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "c180fac04e3797f3484a0462a3dfd070",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "e06b13587157da343e8878fee4d40cd1",
+        "2e4b60fe09b7890c118d5401cb4acfe5"
+      ],
+      "name": "Herbert and Alice Bohn House",
+      "coordinates": [
+        -97.75112,
+        30.29993
+      ]
+    },
+    {
+      "time_zone_geo_id": "America/Chicago",
+      "county_id": "453",
+      "inside": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "114877530e42696489967f95f1d10b48",
+        "e06b13587157da343e8878fee4d40cd1",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070"
+      ],
+      "_type": "geo.commercial_site",
+      "extended_identifiers": {
+        "geonames_id": "4697215",
+        "ascii_name": "Herbert and Alice Bohn House"
+      },
+      "extended_properties": {
+        "state_fips_id": "TX"
+      },
+      "_meta": {
+        "updated_at": "2006-01-15"
+      },
+      "geo": {
+        "elevation": 182,
+        "average_elevation": 182
+      },
+      "_domain_id": "4697215",
+      "md5id": "cc3fc612b4fdc43f9bf7aa2c10d5899b",
+      "feature_codes": {
+        "geonames_feature_code": "S.BLDG"
+      },
+      "geo_geometry_type": "Point",
+      "state_id": "TX",
+      "country_id": "US",
+      "intersects": [
+        "2e4b60fe09b7890c118d5401cb4acfe5",
+        "6daf6697fc3f117536ea9ec906b19d5a",
+        "b13486ccf33fe6a718a3812068662a0a",
+        "64987f7f2c9c2c43e3cabfc7fefb3caa",
+        "114877530e42696489967f95f1d10b48",
+        "e06b13587157da343e8878fee4d40cd1",
+        "eeaa93b7ee54638a02661494eb5ec35d",
+        "e8c0921b7a8e19948b23505f41849dcd",
+        "c180fac04e3797f3484a0462a3dfd070"
+      ],
+      "name": "Herbert and Alice Bohn House",
+      "coordinates": [
+        -97.75112,
+        30.29993
+      ]
+    }
+  ]
+}

@@ -16,7 +16,6 @@ class FoursqResultItem extends ResultItem {
     Map<String, String> featureCodes
     @JsonProperty('timezone')
     String timeZone
-    @JsonProperty('extended_identifiers')
-    Map<String, Object> extendedIdentifiers
+
     String name
 }

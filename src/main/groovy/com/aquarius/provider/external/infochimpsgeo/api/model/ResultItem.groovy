@@ -29,4 +29,23 @@ class ResultItem {
     @JsonDeserialize(using = CoordinatesDeserializer)
     Coordinates coordinates
 
+    @JsonProperty('extended_identifiers')
+    Map<String, Object> extendedIdentifiers
+
+    @JsonProperty('extended_properties')
+    Map<String, Object> extendedProperties
+
+    @JsonProperty('geo')
+    Map<String, Object> geo
+
+    @JsonProperty('feature_codes')
+    Map<String, Object> featureCodes
+
+    // -------------------------------
+
+    String _type
+    Map<String, Object> _meta
+    @JsonProperty('_domain_id')
+    String _domainId
+
 }
