@@ -22,19 +22,53 @@ class MakeRealRequest extends Specification {
             apiKey: apiKey
     )
 
-    def "Few requests, check results count"() {
+    def wikipedia() {
         when:
-            Result result = infochimpsGeoTemplate.executeQuery(geo, query, null)
+            Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Wikipedia, query, null)
         then:
             result != null
             result.total == count
             result.results.size() == count
         where:
-            geo                   |count| query
-            GeoSource.Wikipedia   | 2  | new PointLocationQuery(30.273054, -104.02, 5000)
-            GeoSource.Wikipedia   | 11 | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
-            GeoSource.Foursquare  | 5  | new PointLocationQuery(30.273054, -104.02, 5000)
-            GeoSource.Locationary | 4  | new PointLocationQuery(30.3, -97.75, 150)
-            GeoSource.GeoNames    | 5  | new PointLocationQuery(30.3, -97.75, 200)
+            count | query
+            2     | new PointLocationQuery(30.273054, -104.02, 5000)
+            11    | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
+    }
+
+
+    def foursquare() {
+        when:
+            Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Foursquare, query, null)
+        then:
+            result != null
+            result.total == count
+            result.results.size() == count
+        where:
+            count | query
+            5     | new PointLocationQuery(30.273054, -104.02, 5000)
+    }
+
+    def locationary() {
+        when:
+            Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Locationary, query, null)
+        then:
+            result != null
+            result.total == count
+            result.results.size() == count
+        where:
+            count | query
+            4     | new PointLocationQuery(30.3, -97.75, 150)
+    }
+
+    def geonames() {
+        when:
+            Result result = infochimpsGeoTemplate.executeQuery(GeoSource.GeoNames , query, null)
+        then:
+            result != null
+            result.total == count
+            result.results.size() == count
+        where:
+            count | query
+            5     | new PointLocationQuery(30.3, -97.75, 200)
     }
 }
