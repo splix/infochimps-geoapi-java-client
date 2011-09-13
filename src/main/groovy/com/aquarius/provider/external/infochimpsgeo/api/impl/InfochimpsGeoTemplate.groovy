@@ -20,6 +20,8 @@ import org.springframework.web.util.UriUtils
 import com.aquarius.provider.external.infochimpsgeo.api.model.FoursqResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.LocationaryResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeonamesResult
+import com.aquarius.provider.external.infochimpsgeo.api.InfochimpsErrorHandler
+import com.aquarius.provider.external.infochimpsgeo.api.InfochimpsError
 
 /**
  * Infochimps Geo Client default implementation
@@ -49,6 +51,7 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
 
     RestTemplate restTemplate
     String apiKey = 'NotConfigured'
+    InfochimpsErrorHandler defaultErrorHandler = new TraceErrorHandler()
 
     InfochimpsGeoTemplate() {
         restTemplate = new RestTemplate()
@@ -58,6 +61,10 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
     }
 
     Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException {
+        this.executeQuery(source, query, filters, defaultErrorHandler)
+    }
+
+    Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters, InfochimpsErrorHandler errorHandler) throws InfochimpsGeoException {
         Map params = [:]
         if (query) { //TODO can it be empty?
             params.putAll(query.asParams())
@@ -88,7 +95,20 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
         ].join('')
         Class<Result> clazz = classes.get(source)
 
-        return restTemplate.getForObject(new URI(url), clazz)
+        try {
+            return restTemplate.getForObject(new URI(url), clazz)
+        } catch (Exception e) {
+            if (defaultErrorHandler != null) {
+                return defaultErrorHandler.onError(new InfochimpsError(
+                        source: source,
+                        query: query,
+                        filters: filters,
+                        exception: e
+                ))
+            } else {
+                throw e
+            }
+        }
     }
 
 }

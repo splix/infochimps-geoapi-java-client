@@ -14,6 +14,7 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.Result
  */
 interface InfochimpsGeo {
 
-   Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException
+    Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters, InfochimpsErrorHandler errorHandler) throws InfochimpsGeoException
 
+    Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException
 }
