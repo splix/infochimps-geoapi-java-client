@@ -2,6 +2,7 @@ package com.aquarius.provider.external.infochimpsgeo.api.model
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties
 import org.codehaus.jackson.annotate.JsonProperty
+import groovy.transform.ToString
 
 /**
  * TODO
@@ -10,6 +11,7 @@ import org.codehaus.jackson.annotate.JsonProperty
  * @author Igor Artamonov (http://igorartamonov.com)
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
+@ToString(includeFields = true, includeNames = true, includeSuper=true)
 class LocationaryResultItem extends ResultItem {
 
     String name

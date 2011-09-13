@@ -3,6 +3,7 @@ package com.aquarius.provider.external.infochimpsgeo.api.model
 import org.codehaus.jackson.annotate.JsonProperty
 import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
 import org.codehaus.jackson.map.annotate.JsonDeserialize
+import groovy.transform.ToString
 
 /**
  * Result item
@@ -10,6 +11,7 @@ import org.codehaus.jackson.map.annotate.JsonDeserialize
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
+@ToString
 class ResultItem {
 
     /**

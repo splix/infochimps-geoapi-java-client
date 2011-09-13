@@ -5,6 +5,7 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties
 import org.codehaus.jackson.map.annotate.JsonSerialize
 import com.aquarius.provider.external.infochimpsgeo.api.json.CoordinatesDeserializer
 import org.codehaus.jackson.map.annotate.JsonDeserialize
+import groovy.transform.ToString
 
 /**
  * Wikipedia result item
@@ -13,6 +14,7 @@ import org.codehaus.jackson.map.annotate.JsonDeserialize
  * @author Igor Artamonov (http://igorartamonov.com)
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
+@ToString
 class WikipediaResultItem extends ResultItem {
 
     /**

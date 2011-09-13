@@ -26,6 +26,7 @@ class MakeRealRequest extends Specification {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Wikipedia, query, null)
         then:
+            println "Got $result for $query against Wikipedia"
             result != null
             result.total == count
             result.results.size() == count
@@ -40,6 +41,7 @@ class MakeRealRequest extends Specification {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Foursquare, query, null)
         then:
+            println "Got $result for $query against Foursquare"
             result != null
             result.total == count
             result.results.size() == count
@@ -52,6 +54,7 @@ class MakeRealRequest extends Specification {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Locationary, query, null)
         then:
+            println "Got $result for $query against Locationary"
             result != null
             result.total == count
             result.results.size() == count
@@ -64,6 +67,7 @@ class MakeRealRequest extends Specification {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.GeoNames , query, null)
         then:
+            println "Got $result for $query against Geonames"
             result != null
             result.total == count
             result.results.size() == count

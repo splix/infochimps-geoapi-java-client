@@ -1,6 +1,7 @@
 package com.aquarius.provider.external.infochimpsgeo.api.model
 
 import org.codehaus.jackson.annotate.JsonProperty
+import groovy.transform.ToString
 
 /**
  * TODO
@@ -8,6 +9,7 @@ import org.codehaus.jackson.annotate.JsonProperty
  * @since 09.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
+@ToString(includeFields = true, includeNames = true, includeSuper=true)
 class GeonamesResultItem extends ResultItem {
 
     String name
