@@ -18,7 +18,7 @@ import spock.lang.Timeout
  */
 class MakeRealRequest extends Specification {
 
-    String apiKey = 'splix-V3yuevgolGmEkrRaHVDGgsgkm69'
+    String apiKey = 'api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469'
     InfochimpsGeoTemplate infochimpsGeoTemplate = new InfochimpsGeoTemplate(
             apiKey: apiKey
     )
