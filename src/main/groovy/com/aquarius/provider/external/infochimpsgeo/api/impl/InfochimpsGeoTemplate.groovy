@@ -22,6 +22,8 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.LocationaryResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeonamesResult
 import com.aquarius.provider.external.infochimpsgeo.api.InfochimpsErrorHandler
 import com.aquarius.provider.external.infochimpsgeo.api.InfochimpsError
+import org.springframework.http.client.SimpleClientHttpRequestFactory
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory
 
 /**
  * Infochimps Geo Client default implementation
@@ -30,6 +32,8 @@ import com.aquarius.provider.external.infochimpsgeo.api.InfochimpsError
  * @author Igor Artamonov (http://igorartamonov.com)
  */
 class InfochimpsGeoTemplate implements InfochimpsGeo {
+
+    static int DEFAULT_TIMEOUT = 20000
 
     static Map<GeoSource, String> urls = [:]
     static Map<GeoSource, Class> classes = [:]
@@ -58,6 +62,9 @@ class InfochimpsGeoTemplate implements InfochimpsGeo {
         restTemplate.setMessageConverters([
                 new InfochimpsHttpMessageConverter()
         ])
+        HttpComponentsClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory()
+        requestFactory.readTimeout = DEFAULT_TIMEOUT
+        restTemplate.requestFactory = requestFactory
     }
 
     Result executeQuery(GeoSource source, LocationQuery query, Set<QueryFilter> filters) throws InfochimpsGeoException {
