@@ -8,6 +8,7 @@ import com.aquarius.provider.external.infochimpsgeo.api.model.PointLocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.BoxLocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.Result
+import spock.lang.Timeout
 
 /**
  * TODO
@@ -22,6 +23,7 @@ class MakeRealRequest extends Specification {
             apiKey: apiKey
     )
 
+    @Timeout(10)
     def wikipedia() {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Wikipedia, query, null)
@@ -36,7 +38,7 @@ class MakeRealRequest extends Specification {
             11    | new BoxLocationQuery(37.7993,-122.2777,37.8077,-122.2682)
     }
 
-
+    @Timeout(10)
     def foursquare() {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Foursquare, query, null)
@@ -50,6 +52,7 @@ class MakeRealRequest extends Specification {
             5     | new PointLocationQuery(30.273054, -104.02, 5000)
     }
 
+    @Timeout(10)
     def locationary() {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.Locationary, query, null)
@@ -63,6 +66,7 @@ class MakeRealRequest extends Specification {
             4     | new PointLocationQuery(30.3, -97.75, 150)
     }
 
+    @Timeout(10)
     def geonames() {
         when:
             Result result = infochimpsGeoTemplate.executeQuery(GeoSource.GeoNames , query, null)
