@@ -5,7 +5,7 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties
 import groovy.transform.ToString
 
 /**
- * TODO
+ * Foursquare result item
  *
  * @since 07.09.11
  * @author Igor Artamonov (http://igorartamonov.com)

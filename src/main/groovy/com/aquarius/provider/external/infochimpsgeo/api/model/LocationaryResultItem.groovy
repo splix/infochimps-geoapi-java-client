@@ -5,7 +5,7 @@ import org.codehaus.jackson.annotate.JsonProperty
 import groovy.transform.ToString
 
 /**
- * TODO
+ * Locationary result item
  *
  * @since 09.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
