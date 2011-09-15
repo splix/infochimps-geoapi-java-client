@@ -5,6 +5,7 @@ import com.aquarius.provider.external.infochimpsgeo.api.impl.InfochimpsGeoTempla
 import com.aquarius.provider.external.infochimpsgeo.api.model.GeoSource
 import com.aquarius.provider.external.infochimpsgeo.api.model.LocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.PointLocationQuery
+import com.aquarius.provider.external.infochimpsgeo.api.model.AddressLocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.WikipediaResult
 import com.aquarius.provider.external.infochimpsgeo.api.model.BoxLocationQuery
 import com.aquarius.provider.external.infochimpsgeo.api.model.Result
@@ -50,6 +51,7 @@ class MakeRealRequest extends Specification {
         where:
             count | query
             5     | new PointLocationQuery(30.273054, -104.02, 5000)
+            16    | new AddressLocationQuery(address: 'NY', radius: 10000)
     }
 
     @Timeout(10)
