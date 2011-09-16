@@ -13,7 +13,6 @@ import groovy.transform.ToString
  * @since 02.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
 @ToString
 class WikipediaResultItem extends ResultItem {
 

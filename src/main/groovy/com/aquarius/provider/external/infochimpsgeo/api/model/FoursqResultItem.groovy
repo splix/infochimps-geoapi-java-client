@@ -10,7 +10,6 @@ import groovy.transform.ToString
  * @since 07.09.11
  * @author Igor Artamonov (http://igorartamonov.com)
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
 @ToString(includeFields = true, includeNames = true, includeSuper=true)
 class FoursqResultItem extends ResultItem {
 
